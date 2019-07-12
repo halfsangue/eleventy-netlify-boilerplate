@@ -1,9 +1,9 @@
 ---
-layout: layouts/engagement-rings.njk
-title: Engagement Rings
+layout: layouts/wedding-rings.njk
+title: Wedding Rings
 tags:
   - nav
-navtitle: Engagement Rings
+navtitle: Wedding Rings
 date: 2017-01-01
-permalink: /engagement-rings/index.html
+permalink: /wedding-rings/index.html
 ---

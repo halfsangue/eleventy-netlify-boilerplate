@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/ring.njk",
+  "permalink": "wedding/{{ title | slug }}/index.html",
+  "tags": "wedding"
+}

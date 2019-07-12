@@ -24,7 +24,7 @@ collections:
   - name: "pages"
     label: "Page"
     folder: "pages"
-    create: false # Change to true to allow editors to create new pages
+    create: true # Change to true to allow editors to create new pages
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -43,5 +43,17 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["engagment"] }
+      - { label: "Body", name: "body", widget: "markdown" }
+      # Our wedding rings
+  - name: "wedding-rings" # Used in routes, e.g., /admin/collections/blog
+    label: "Wedding Rings" # Used in the UI
+    folder: "wedding-rings" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["wedding"] }
       - { label: "Body", name: "body", widget: "markdown" }
