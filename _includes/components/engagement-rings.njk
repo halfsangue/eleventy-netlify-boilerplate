@@ -1,0 +1,35 @@
+<section>
+  {% for ring in engagementRings %}
+  <article{% if ring.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ ring.url | url }}">
+					{% if ring.data.title %}
+						{{ ring.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if ring.data.summary %}
+				<p>
+					{{ ring.data.summary }}
+				</p>
+			{% endif %}
+			<p>
+				<time datetime="{{ ring.date | machineDate }}">
+					<small>{{ ring.date | readableDate }} by {{ metadata.author.name }}</small>
+				</time>
+			</p>
+			{% if ring.data.tags %}
+				<p>
+					{% for tag in ring.data.tags %}
+		  			{%- if tag != "ring" -%}
+		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+		  			{%- endif -%}
+					{% endfor %}
+				</p>
+			{% endif %}
+		</article>
+	{% endfor %}
+</section>

@@ -1,3 +1,5 @@
 {
-  "layout": "layouts/ring.njk"
+  "layout": "layouts/ring.njk",
+  "permalink": "engagement-rings/{{ title | slug }}/index.html",
+  "tags": "engagement"
 }
