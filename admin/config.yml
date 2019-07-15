@@ -43,8 +43,9 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["engagment"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["engagement"] }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "Image", widget: "image" }
       # Our wedding rings
   - name: "wedding-rings" # Used in routes, e.g., /admin/collections/blog
     label: "Wedding Rings" # Used in the UI

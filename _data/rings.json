@@ -1,0 +1,22 @@
+{
+  "engagement": [
+    {
+      "type": "Classic"
+    },
+    {
+      "type": "Sidestone"
+    },
+    {
+      "type": "Vintage"
+    },
+    {
+      "type": "Halo"
+    },
+    {
+      "type": "Gemstone"
+    },
+    {
+      "type": "3 Stone"
+    }
+  ]
+}
