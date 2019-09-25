@@ -1,7 +1,7 @@
 :root {
-	--turkey: #FFF0EB;
 	--white: white;
-	--blue: blue;
+	--black: black;
+	--red: #ff5252;
 }
 
 *, *:before, *:after {
@@ -10,20 +10,21 @@
 
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 0.5rem;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
 }
 
 body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+	background-color: white;
 }
 
 main {
-	max-width: 37.5em;
+	position:absolute;
+	bottom:1rem;
 }
 
 p,
@@ -34,7 +35,7 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+	color: var(--black);
 }
 
 a[href]:not(:hover) {
@@ -44,7 +45,13 @@ a[href]:not(:hover) {
 header,
 main,
 footer {
-	padding: 1em;
+	padding: 1rem;
+}
+
+header h1 {
+	font-size:3rem;
+	border-bottom:1px solid black;
+	margin-bottom:0;
 }
 
 main {
@@ -99,6 +106,7 @@ header nav li {
 
 header nav li a[href]:not(:hover) {
 	text-decoration: none;
+	color:var(--red);
 }
 
 header nav li a[data-current="current item"] {
@@ -184,4 +192,20 @@ button {
 	:root {
 		font-size: 1.1rem;
 	}
+
+	html,
+	body {
+		padding:2rem 2rem 0 2rem;
+		
+	}
+
+	nav {
+		float:right;
+	}
+
+	main {
+		max-width:50vw;
+		font-size:1.3rem;
+	}
+	
 }
